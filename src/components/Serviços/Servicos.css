@@ -1,0 +1,38 @@
+.container {
+    background-color: #181A2A; 
+    padding: 40px;
+    border-radius: 12px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto; 
+}
+
+
+button {
+    padding: 15px; 
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0 10px;
+    flex: 1;
+    max-width: 220px;
+    background-color: #181A2A;
+    color: white;
+    text-align: center;
+}
+
+button.consultoria:hover {
+    background-color: #373b5f;
+    transform: scale(1.05);
+}
+
+button.criador:hover {
+    background-color: #373b5f;
+    transform: scale(1.05);
+}

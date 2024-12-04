@@ -1,0 +1,48 @@
+.input-field textarea{
+    width: 100%;
+    border-radius: 10px;
+    resize: none;
+    min-height: 100px;
+    padding: 10px;
+    font-size: 1rem;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+/* textarea{
+    padding: 10px;
+} */
+
+textarea::placeholder {
+    color: rgb(94, 94, 94); 
+    font-style: italic; 
+    opacity: 0.5;
+    padding: 1px;
+  }
+
+.containerCadastro .retrive-linkForms {
+    padding: 15px;
+    font-size: 14px;
+    text-align: right;
+    align-items: right;
+    margin-top: 80px;
+    gap: 15px;
+}
+
+.containerCadastro .botaoForms {
+    width: 25%;
+    height: 40px;
+    background-color: #302c2c;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}   
+
+.botaoForms {
+    color: #ffffff;
+}

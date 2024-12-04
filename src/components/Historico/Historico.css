@@ -1,0 +1,29 @@
+.historico-container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.historico-list {
+    margin-top: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.historico-item {
+    border: 2px solid #3f3947;
+    margin-bottom: 5px;
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.historico-item h3 {
+    margin: 0 0 10px;
+}
+
+.historico-item p {
+    margin: 5px 0;
+}

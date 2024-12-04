@@ -1,0 +1,219 @@
+.containerPai {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.containerCadastroEdit {
+    width: 58%;
+    background-color: #201c2c;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.containerCadastroFoto {
+    width: 40%;
+    background-color: #201c2c;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.containerCadastroEdit img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.containerCadastroEdit h1 {
+    font-size: 25px;
+    font-family: Helvetica;
+    color: white;
+    text-align: center;
+}
+
+.containerCadastroEdit p{
+    height: 25px;
+    font-size: 15px;
+    font-family: Helvetica;
+    color: #B3B3B3;
+}
+
+.containerCadastroEdit .input-fieldEdit {
+    position: relative;
+    width: 100%; 
+    height: 50px;
+    margin: 30px auto;
+}
+
+
+
+.containerCadastroFoto img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.containerCadastroFoto h1 {
+    font-size: 25px;
+    font-family: Helvetica;
+    color: white;
+    text-align: center;
+}
+
+.containerCadastroFoto p{
+    height: 25px;
+    font-size: 15px;
+    font-family: Helvetica;
+    color: #B3B3B3;
+}
+
+.containerCadastroFoto .input-fieldEdit {
+    position: relative;
+    width: 100%; 
+    height: 50px;
+    margin: 30px auto;
+}
+
+.input-fieldEdit input {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+}
+
+.input-fieldEdit .custom-selectEdit {
+    width: 100% !important;
+    height: 70% !important;
+    outline: none !important;
+    border-radius: 10px !important;
+}
+
+.input-fieldEdit .custom-datepickerEdit {
+    width: 278%;
+    height: 70%;
+    outline: none;
+    border-radius: 10px;
+}
+
+.containerCadastroEdit .singup-link {
+    padding: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+.containerCadastroEdit .recall-login {
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.containerCadastroEdit .retrive-link {
+    padding: 15px;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+.singup-link p{
+    padding: 7px;
+    font-size: 17px;
+}
+.recall-login a,
+.singup-link p a {
+    font-size: 17px;
+    color:#ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.recall-login a:hover,
+.singup-link p a:hover {
+    text-decoration: underline;
+}
+
+.containerCadastroEdit .botao {
+    width: 100%;
+    height: 40px;
+    background-color: #302c2c;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}   
+
+.containerCadastroFoto .botao {
+    width: 100%;
+    height: 40px;
+    background-color: #8070a0;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 25px;
+}   
+
+.botao {
+    color: #ffffff;
+}
+
+.containerCadastroEdit button:hover {
+    background-color: #252323
+}
+
+input{
+    padding: 10px;
+}
+
+input::placeholder {
+    color: rgb(94, 94, 94); 
+    font-style: italic; 
+    opacity: 0.5;
+    padding: 1px;
+  }
+
+.custom-selectEdit__placeholder {
+    color: rgb(94, 94, 94) !important; 
+    font-style: italic !important; 
+    font-size: 13px;
+    opacity: 0.5 !important; 
+    padding: 1px !important;
+    
+  }
+
+.custom-selectEdit__control {
+    font-size: 13px;
+}
+
+
+.custom-selectEdit__single-value {
+    font-size: 13px;
+}
+
+
+.custom-selectEdit__option {
+    font-size: 10px;
+}
+
+
+  .custom-datepickerEdit:focus {
+    border-color: #000 !important;
+  }
+  
+  .imagePerfilEdit {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 50%;
+}

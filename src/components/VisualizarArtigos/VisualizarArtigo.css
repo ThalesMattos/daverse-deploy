@@ -1,0 +1,246 @@
+.containerArtigo {
+  width: 90%;
+  max-width: 1800px;
+  margin: 10% auto;
+  padding: 20px;
+  background-color: #10141c;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.artigo-titulo {
+  font-size: 28px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.artigo-subtitulo {
+  font-size: 20px;
+  color: #b3b3b3;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.artigo-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #b3b3b3;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.artigo-corpo {
+  white-space: pre-wrap !important;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  color: #d0d0d0;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.artigo-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: auto;
+  justify-content: center;
+}
+
+.artigo-tag {
+  padding: 5px 10px;
+  background-color: #302c2c;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.artigo-acoes {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.artigo-acoes button {
+  width: 100%;
+  max-width: 300px;
+  min-height: 40px;
+  padding: 10px 15px;
+  background-color: #302c2c;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.artigo-acoes button:hover {
+  background-color: #252323;
+}
+
+.loading, .error {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #201c2c;
+  border: 1px solid #ff6b6b;
+  border-radius: 10px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+}
+
+.error {
+  color: #ff6b6b;
+}
+
+.rating-hearth {
+  font-size: 15px;
+  color: rgba(255, 0, 0, 0.5);
+  cursor: pointer;
+  margin-bottom: 2px;
+  text-shadow: 0 0 0 2px rgba(255, 0, 0, 0.5);
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.rating-star {
+  font-size: 18px;
+  color: rgba(251, 255, 0, 0.5);
+  cursor: pointer;
+  margin-bottom: 2px;
+  text-shadow: 0 0 0 2px rgba(251, 255, 0, 0.5);
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.rating-star.liked {
+  color: rgba(251, 255, 0);
+  text-shadow: none;
+}
+
+.rating-hearth.liked {
+  color: rgb(255, 0, 0);
+  text-shadow: none;
+}
+
+.rating-hearth:hover {
+  color: rgba(255, 0, 0, 0.8);
+}
+
+.artigo-infos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.artigo-infos .artigo-subs {
+  font-size: 11px;
+  color: #b3b3b3;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #10141c;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  color: #ffffff;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #20232a;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #0870ff;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-actions button {
+  background-color: #302c2c;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.modal-actions button:hover {
+  background-color: #252323;
+}
+
+@media (max-width: 768px) {
+  .containerArtigo {
+    width: 95%;
+    padding: 15px;
+    max-width: 600px;
+    margin: 30% auto;
+  }
+
+  .artigo-titulo {
+    font-size: 22px;
+  }
+
+  .artigo-subtitulo {
+    font-size: 16px;
+  }
+
+  .artigo-corpo {
+    font-size: 14px;
+  }
+
+  .artigo-infos .artigo-subs {
+    font-size: 10px;
+  }
+
+  .artigo-tag {
+    font-size: 12px;
+  }
+
+  .artigo-acoes button {
+    font-size: 14px;
+    min-height: 35px;
+    padding: 8px 12px;
+  }
+}

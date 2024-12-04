@@ -1,0 +1,95 @@
+/* .containerCadastro .retrive-linkFormsConsultoria {
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+} */
+/* .retrive-linkFormsConsultoria {
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.containerCadastro .retrive-linkFormsConsultoria {
+    padding: 15px;
+    font-size: 14px;
+    text-align: right;
+    align-items: right;
+    margin-top: 20px;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.upload-field {
+    margin-top: 300px;
+}
+
+/* .upload-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#file-upload {
+    padding: 5px;
+}*/
+
+.upload-field {
+    margin-top: 320px; 
+} 
+
+.upload-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.upload-button i {
+    margin-right: 10px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.botaoVoltar {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+    font-size: 1.5rem;
+}
+
+.botaoVoltar:hover {
+    color: #0056b3;
+}
+
+.file-name {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.error-message {
+    color: #ff6b6b !important;
+}

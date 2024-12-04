@@ -1,0 +1,133 @@
+.containerCriacaoArtigo {
+  margin: 6% auto;
+}
+
+@media (max-width: 1200px) {
+  .containerCriacaoArtigo {
+    margin: 10% auto;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  width: 100vw;
+  margin: 0;
+}
+
+.input-container {
+  background-color: #10141c;
+  padding: 15px;
+  border-radius: 5px;
+  width: calc(100% - 40px);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.titulo-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.subtitulo-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 24px;
+  font-style: italic;
+  color: white;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.corpo-textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  background: none;
+  border: none;
+  outline: none;
+  height: 200px;
+  resize: vertical;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tag-item {
+  padding: 5px 10px;
+  background-color: lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.tag-item.selected {
+  background-color: #042549;
+  color: white;
+}
+
+.tag-item:hover {
+  transform: scale(1.05);
+}
+
+.media-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: transparent; 
+}
+
+.media-container h3 {
+  color: white; 
+}
+
+.media-item {
+  padding: 5px 10px;
+  background-color: lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.media-item.selected {
+  background-color: red;
+  color: white;
+}
+
+.media-item:hover {
+  transform: scale(1.05);
+}
+
+.submit-button {
+  padding: 10px 15px;
+  background-color: #302c2c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.submit-button:hover {
+  background-color: #252323;
+}

@@ -29,20 +29,20 @@ function App() {
         <Navbar />
         <div>
           <Routes>
-            <Route path="/" element={<Conteudo />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/recuperacao" element={<Recuperacao />} />
-            <Route path="/cadastro" element={<Cadastro />} />
-            <Route path="/editperfil" element={<Editperfil />} />
-            <Route path="/criacaoartigo" element={<CriacaoArtigo />} />
-            <Route path="/visualizar-artigo/:artigoId" element={<VisualizarArtigo />} />
-            <Route path="/servicos/inscricao" element={<Inscricao />} />
-            <Route path="/servicos/consultoria" element={<Consultoria />} />
-            <Route path="/servicos" element={<Servicos />} />
-            <Route path="/produtos" element={<Produtos />} />
-            <Route path="/produto/:productId" element={<VisualizarProduto />} />
-            <Route path="/historico" element={<Historico />} />
-            <Route path="/admin/*" element={
+            <Route path="/daverse-deploy/" element={<Conteudo />} />
+            <Route path="/daverse-deploy/login" element={<Login />} />
+            <Route path="/daverse-deploy/recuperacao" element={<Recuperacao />} />
+            <Route path="/daverse-deploy/cadastro" element={<Cadastro />} />
+            <Route path="/daverse-deploy/editperfil" element={<Editperfil />} />
+            <Route path="/daverse-deploy/criacaoartigo" element={<CriacaoArtigo />} />
+            <Route path="/daverse-deploy/visualizar-artigo/:artigoId" element={<VisualizarArtigo />} />
+            <Route path="/daverse-deploy/servicos/inscricao" element={<Inscricao />} />
+            <Route path="/daverse-deploy/servicos/consultoria" element={<Consultoria />} />
+            <Route path="/daverse-deploy/servicos" element={<Servicos />} />
+            <Route path="/daverse-deploy/produtos" element={<Produtos />} />
+            <Route path="/daverse-deploy/produto/:productId" element={<VisualizarProduto />} />
+            <Route path="/daverse-deploy/historico" element={<Historico />} />
+            <Route path="/daverse-deploy/admin/*" element={
                 <ProtectedRoute requiredRole="ADMIN">
                   <Routes>
                     <Route path="/" element={<Administrador />} />

@@ -27,7 +27,7 @@ const Edit = () => {
                 navigate('/');
             } else {
                 try {
-                    const response = await axios.get('http://localhost:8080/user/get-user-info', {
+                    const response = await axios.get('http://18.216.79.53:8080/user/get-user-info', {
                         headers: {
                             Authorization: `Bearer ${token}`
                         }
@@ -118,7 +118,7 @@ const Edit = () => {
 
         try {
             const token = localStorage.getItem('token');
-            const response = await axios.put('http://localhost:8080/user/update-user-details', data,  { 
+            const response = await axios.put('http://18.216.79.53:8080/user/update-user-details', data,  { 
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

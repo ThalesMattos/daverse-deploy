@@ -18,7 +18,7 @@ const VisualizarArtigo = () => {
       try {
         const token = localStorage.getItem('token');
         const response = await axios.post(
-          `http://localhost:8080/article/check-if-user-liked-article/${contentId}`,
+          `http://18.216.79.53:8080/article/check-if-user-liked-article/${contentId}`,
           {},
           {
             headers: {
@@ -61,7 +61,7 @@ const VisualizarArtigo = () => {
       setLoading(true);
       const token = localStorage.getItem('token');
       const response = await axios.post(
-        `http://localhost:8080/article/rate/${content.id}`,
+        `http://18.216.79.53:8080/article/rate/${content.id}`,
         {},
         {
           headers: {
@@ -106,7 +106,7 @@ const VisualizarArtigo = () => {
       debugger;
 
       await axios.post(
-        `http://localhost:8080/article/report-error/${content.id}`,
+        `http://18.216.79.53:8080/article/report-error/${content.id}`,
         { errorDescription: errorDescription },
         {
           headers: {

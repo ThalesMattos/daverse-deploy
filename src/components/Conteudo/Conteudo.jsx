@@ -72,7 +72,7 @@ const Conteudo = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.post(
-        "http://localhost:8080/article/views",
+        "http://18.216.79.53:8080/article/views",
         {
           articleId: id,
         },
@@ -108,7 +108,7 @@ const Conteudo = () => {
     const fetchArticles = async () => {
       setIsLoading(true);
       try {
-        const response = await axios.get("http://localhost:8080/article");
+        const response = await axios.get("http://18.216.79.53:8080/article");
         const storedTags = localStorage.getItem('filterTags');
         
         if (!isMounted) return;

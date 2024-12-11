@@ -25,7 +25,7 @@ const ReportError = ({ contentId, onClose }) => {
         const token = localStorage.getItem('token');
 
         try {
-            const response = await axios.post(`http://localhost:8080/article/report-error/${contentId}`, {
+            const response = await axios.post(`http://18.216.79.53:8080/article/report-error/${contentId}`, {
                 errorType,
                 errorDescription
             }, {

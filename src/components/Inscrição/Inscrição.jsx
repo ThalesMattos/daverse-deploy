@@ -30,7 +30,7 @@ const Inscrição = () => {
 
         try {
             const token = localStorage.getItem('token');
-            const response = await axios.post('http://localhost:8080/forms/content-creator', data, { 
+            const response = await axios.post('http://18.216.79.53:8080/forms/content-creator', data, { 
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

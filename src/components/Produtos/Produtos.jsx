@@ -14,7 +14,7 @@ const Produtos = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/products");
+        const response = await axios.get("http://18.216.79.53:8080/products");
         const fetchedProducts = response.data.map((product) => ({
           id: product.id,
           image: product.mediaLink,

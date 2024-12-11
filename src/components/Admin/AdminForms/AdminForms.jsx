@@ -11,7 +11,7 @@ const AdminForms = () => {
     const fetchForms = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get("http://localhost:8080/forms", {
+        const response = await axios.get("http://18.216.79.53:8080/forms", {
           headers: {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json'
@@ -59,7 +59,7 @@ const AdminForms = () => {
       return;
     }
     try {
-      const response = await axios.delete("http://localhost:8080/forms/erase-form", {
+      const response = await axios.delete("http://18.216.79.53:8080/forms/erase-form", {
         data: { ids: selectedRows },
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -108,7 +108,7 @@ const AdminForms = () => {
   
     try {
       const response = await axios.post(
-        "http://localhost:8080/forms/approve-content-creator",
+        "http://18.216.79.53:8080/forms/approve-content-creator",
         { ids: selectedRows },
         {
           headers: {

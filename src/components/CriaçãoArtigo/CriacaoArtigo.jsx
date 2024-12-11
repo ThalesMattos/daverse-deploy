@@ -124,7 +124,7 @@ const CriacaoArtigo = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:8080/article/publish', {
+      const response = await axios.post('http://18.216.79.53:8080/article/publish', {
         title: titulo, 
         subtitle: subtitulo, 
         body: corpo,

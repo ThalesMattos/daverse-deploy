@@ -41,7 +41,7 @@ const Consultoria = () => {
 
         try {
             const token = localStorage.getItem('token');
-            await axios.post('http://localhost:8080/forms/consultancy', formData, { 
+            await axios.post('http://18.216.79.53:8080/forms/consultancy', formData, { 
                 headers: {
                     Authorization: `Bearer ${token}`,
                     'Content-Type': 'multipart/form-data'

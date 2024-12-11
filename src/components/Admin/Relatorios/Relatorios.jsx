@@ -16,7 +16,7 @@ const Relatorio = () => {
       const token = localStorage.getItem("token");
       if (!token) throw new Error("Token de autenticação não encontrado.");
 
-      const response = await axios.get("http://localhost:8080/article/get-article-like-data", {
+      const response = await axios.get("http://18.216.79.53:8080/article/get-article-like-data", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

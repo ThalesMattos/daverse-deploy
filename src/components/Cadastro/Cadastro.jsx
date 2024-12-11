@@ -91,7 +91,7 @@ const Cadastro = () => {
         };
 
         try {
-            const response = await axios.post('http://localhost:8080/auth/register', data);
+            const response = await axios.post('http://18.216.79.53:8080/auth/register', data);
             console.log("Usuário cadastrado com sucesso:", response.data);
             navigate('/login', { replace: true });
         } catch (error) {

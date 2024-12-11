@@ -20,7 +20,7 @@ const AdminUsuario = () => {
     debugger;
 
     try {
-      const response = await axios.get(`http://localhost:8080/user/search-by-name`, {
+      const response = await axios.get(`http://18.216.79.53:8080/user/search-by-name`, {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ const AdminUsuario = () => {
 
     try {
       const response = await axios.put(
-        `http://localhost:8080/user/change-user-role`,
+        `http://18.216.79.53:8080/user/change-user-role`,
         { userId: userId, userRole: newRole },
         {
           headers: {

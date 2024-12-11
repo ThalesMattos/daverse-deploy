@@ -21,7 +21,7 @@ const Historico = () => {
                 navigate('/');
             } else {
                 try {
-                    const response = await axios.get('http://localhost:8080/user/user-history', {
+                    const response = await axios.get('http://18.216.79.53:8080/user/user-history', {
                         headers: {
                             Authorization: `Bearer ${token}`
                         }
